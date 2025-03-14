@@ -14,7 +14,7 @@ def mangle_pdf(pdf, color):
         mangle_page(pdf, page, color)
 
 def mangle_page(pdf, page, color):
-    page.page_contents_coalesce()
+    page.contents_coalesce()
     op_rg = pikepdf.Operator('rg')
     op_BT = pikepdf.Operator('BT')
     op_ET = pikepdf.Operator('ET')
