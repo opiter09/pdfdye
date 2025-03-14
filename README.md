@@ -7,7 +7,7 @@ Prerequisites
 =============
 
 * Python 3.X
-* pikepdf_ ≥ 1.9
+* pikepdf_ ≥ 3.0.0
 
 .. _pikepdf:
    https://pypi.org/project/pikepdf/
