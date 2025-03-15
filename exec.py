@@ -4,11 +4,11 @@ import pdfdye
 import pikepdf
 
 layout = [
-    [ psg.Text("Input PDF:"), psg.FileBrowse(key = "input", file_types = [("PDF Files", ".pdf")]) ],
-    [ psg.Text("Red:"), psg.DropDown(list(range(256)), default_value = "0", key = "red") ],
-    [ psg.Text("Green:"), psg.DropDown(list(range(256)), default_value = "0", key = "green") ],
-    [ psg.Text("Blue:"), psg.DropDown(list(range(256)), default_value = "0", key = "blue") ],
-    [ psg.Text("Output PDF:"), psg.FileSaveAs(key = "output", file_types = [("PDF Files", ".pdf")]) ],
+    [ psg.Text("Input PDF:", size = 10), psg.Input(key = "input"), psg.FileBrowse(file_types = [("PDF Files", ".pdf")]) ],
+    [ psg.Text("Red:", size = 10), psg.DropDown(list(range(256)), default_value = "0", key = "red") ],
+    [ psg.Text("Green:", size = 10), psg.DropDown(list(range(256)), default_value = "0", key = "green") ],
+    [ psg.Text("Blue:", size = 10), psg.DropDown(list(range(256)), default_value = "0", key = "blue") ],
+    [ psg.Text("Output PDF:", size = 10), psg.Input(key = "output"), psg.FileSaveAs(file_types = [("PDF Files", ".pdf")]) ],
     [ psg.Button("Submit", key = "submit") ]
 ]
 
