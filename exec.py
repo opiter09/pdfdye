@@ -12,7 +12,7 @@ layout = [
     [ psg.Submit() ]
 ]
 
-window = psg.Window("", layout, grab_anywhere = True, resizable = True, font = "-size 12")
+window = psg.Window("", layout, grab_anywhere = True, font = "-size 12")
 event, values = window.read()
 window.close()
 
