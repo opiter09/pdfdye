@@ -1,7 +1,7 @@
 Overview
 ========
 
-**pdfdye** changes text color in PDF files.
+**pdfdye** changes text color in PDF files. It changes all the text to a single color of your choosing.
 
 Usage
 ========
